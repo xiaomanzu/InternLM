@@ -5,7 +5,8 @@
 ## 通用模型
 - 一个模型应对多种任务，多种模态
 
-## 7b and 20b --interLM2-base/InternLM2/InternLM2-Chat
+## 7b and 20b 
+- interLM2-base/InternLM2/InternLM2-Chat
 
 ## InternLM2主要亮点
 - 超长上下文，支持200K token
