@@ -78,7 +78,7 @@ python /root/demo/cli_demo.py
   ![](Figure/lessson_2/QQ图片20240611205733.png)
 
 # 二、进阶作业
-## 2.1熟悉 huggingface 下载功能，使用 huggingface_hub python 包，下载 InternLM2-Chat-7B 的 config.json 文件到本地（需截图下载过程）
+## 2.1 熟悉 huggingface 下载功能，使用 huggingface_hub python 包，下载 InternLM2-Chat-7B 的 config.json 文件到本地（需截图下载过程）
 - 下载代码
   
 ![](Figure/lessson_2/QQ图片20240611205700.png)
@@ -86,14 +86,14 @@ python /root/demo/cli_demo.py
 - config.json文件
   
 ![](Figure/lessson_2/QQ图片20240611205704.png)
-## 2.2完成 浦语·灵笔2 的 图文创作 及 视觉问答 部署（需截图）
-### 2.2.1初步介绍 XComposer2 相关知识
+## 2.2 完成 浦语·灵笔2 的 图文创作 及 视觉问答 部署（需截图）
+### 2.2.1 初步介绍 XComposer2 相关知识
 浦语·灵笔2 是基于 书生·浦语2 大语言模型研发的突破性的图文多模态大模型，具有非凡的图文写作和图像理解能力，在多种应用场景表现出色，总结起来其具有：
 
 自由指令输入的图文写作能力： 浦语·灵笔2 可以理解自由形式的图文指令输入，包括大纲、文章细节要求、参考图片等，为用户打造图文并貌的专属文章。生成的文章文采斐然，图文相得益彰，提供沉浸式的阅读体验。
 准确的图文问题解答能力：浦语·灵笔2 具有海量图文知识，可以准确的回复各种图文问答难题，在识别、感知、细节描述、视觉推理等能力上表现惊人。
 杰出的综合能力： 浦语·灵笔2-7B 基于 书生·浦语2-7B 模型，在13项多模态评测中大幅领先同量级多模态模型，在其中6项评测中超过 GPT-4V 和 Gemini Pro。
-###  2.2.2配置基础环境（开启 50% A100 权限后才可开启此章节）
+###  2.2.2 配置基础环境（开启 50% A100 权限后才可开启此章节）
 - 进入开发机，启动 conda 环境：
 ```
 conda activate demo
@@ -113,7 +113,7 @@ git checkout f31220eddca2cf6246ee2ddf8e375a40457ff626
 ln -s /root/share/new_models/Shanghai_AI_Laboratory/internlm-xcomposer2-7b /root/models/internlm-xcomposer2-7b
 ln -s /root/share/new_models/Shanghai_AI_Laboratory/internlm-xcomposer2-vl-7b /root/models/internlm-xcomposer2-vl-7b
 ```
-### 2.2.3图文写作实战（开启 50% A100 权限后才可开启此章节）
+### 2.2.3 图文写作实战（开启 50% A100 权限后才可开启此章节）
 - 继续输入指令，用于启动 InternLM-XComposer：
 ```
 cd /root/demo/InternLM-XComposer
@@ -127,7 +127,7 @@ python /root/demo/InternLM-XComposer/examples/gradio_demo_composition.py  \
 ![](Figure/lessson_2/QQ图片20240611205640.png)
 ![](Figure/lessson_2/QQ图片20240611205645.png)
 
-### 2.2.4图片理解实战（开启 50% A100 权限后才可开启此章节）
+### 2.2.4 图片理解实战（开启 50% A100 权限后才可开启此章节）
 - 关闭终端并重新启动一个新的 terminal，继续输入指令，启动 InternLM-XComposer2-vl：
 ```
 conda activate demo
@@ -142,8 +142,8 @@ python /root/demo/InternLM-XComposer/examples/gradio_demo_chat.py  \
 - 结果如下：
 ![](Figure/lessson_2/QQ图片20240611205650.png)
 
-## 2.3完成 Lagent 工具调用 数据分析 Demo 部署（需截图）
-### 2.3.1初步介绍 Lagent 相关知识
+## 2.3 完成 Lagent 工具调用 数据分析 Demo 部署（需截图）
+### 2.3.1 初步介绍 Lagent 相关知识
 Lagent 是一个轻量级、开源的基于大语言模型的智能体（agent）框架，支持用户快速地将一个大语言模型转变为多种类型的智能体，并提供了一些典型工具为大语言模型赋能。它的整个框架图如下:
 ![](Figure/lessson_2/Lagent-1.png)
 
@@ -155,7 +155,7 @@ Lagent 的特性总结如下：
   - Action: 简单的继承和装饰，即可打造自己个人的工具集，不论 InternLM 还是 GPT 均可适配；
   - Agent：与 Model 的输入接口保持一致，模型到智能体的蜕变只需一步，便捷各种 agent 的探索实现；
 - 文档全面升级，API 文档全覆盖。
-### 2.3.2配置基础环境（开启 30% A100 权限后才可开启此章节）
+### 2.3.2 配置基础环境（开启 30% A100 权限后才可开启此章节）
 - 使用 git 命令下载 Lagent 相关的代码库：
 ```
 git clone https://gitee.com/internlm/lagent.git
@@ -164,7 +164,7 @@ cd /root/demo/lagent
 git checkout 581d9fb8987a5d9b72bb9ebd37a95efd47d479ac
 pip install -e . # 源码安装
 ```
-### 2.3.3使用 Lagent 运行 InternLM2-Chat-7B 模型为内核的智能体
+### 2.3.3 使用 Lagent 运行 InternLM2-Chat-7B 模型为内核的智能体
 Intern Studio 在 share 文件中预留了实践章节所需要的所有基础模型，包括 InternLM2-Chat-7b 、InternLM2-Chat-1.8b 等等。我们可以在后期任务中使用 share 文档中包含的资源，但是在本章节，为了能让大家了解各类平台使用方法，还是推荐同学们按照提示步骤进行实验。
 - 打开 lagent 路径：`cd /root/demo/lagent`
 - 在 terminal 中输入指令，构造软链接快捷访问方式：`ln -s /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-7b /root/models/internlm2-chat-7b`
