@@ -1,29 +1,37 @@
 # RAG介绍
 ## RAG技术概述
-图片QQ图片20240616172629
+![](Figure/lesson_3/QQ图片20240616172629.png)
+
 ## RAG工作原理
-图片QQ图片20240616172620
+![](Figure/lesson_3/QQ图片20240616172620.png)
 文档，网页--》编码成向量，存储到向量库中--》检索（接收用户问题并转化成向量，并在向量库中找出与问题最相关的内容）--》生成（将检索到的文档和原始问题一起最为提示词输入给大模型）
 ### 向量数据库（Vector-DB、Vector-Database） 储存外部数据
-图片 QQ图片20240616172610
+![](Figure/lesson_3/QQ图片20240616172610.png)
 
 ### RAG流程示例
-图片QQ图片20240616172553
+![](Figure/lesson_3/QQ图片20240616172553.png)
+
 ### RAG发展进程
-图片QQ图片20240616172546
+![](Figure/lesson_3/QQ图片20240616172546.png)
+
 ### RAG常见优化方法
-图片QQ图片20240616172538
+![](Figure/lesson_3/QQ图片20240616172538.png)
+
 ### RAG vs. 微调
-QQ图片20240616172442
+![](Figure/lesson_3/QQ图片20240616172442.png)
+
 ### LLM模型优化方法比较
-图片QQ图片20240616172431
+![](Figure/lesson_3/QQ图片20240616172431.png)
+
 ### 评估框架和基准测试
-图片QQ图片20240616172359
+![](Figure/lesson_3/QQ图片20240616172359.png)
+
 ### RAG总结
-图片QQ图片20240616172347
+![](Figure/lesson_3/QQ图片20240616172347.png)
 
 # 茴香豆
-图片QQ图片20240616172336
+![](Figure/lesson_3/QQ图片20240616172336.png)
+
 ## 茴香豆的核心特性：
 - 开源免费
 - 高效准确
@@ -32,11 +40,13 @@ QQ图片20240616172442
 - 安全
 - 扩展性强
 ## 茴香豆构建
-图片QQ图片20240616172327
+![](Figure/lesson_3/QQ图片20240616172327.png)
+
 ## 茴香豆的工作流
-图片QQ图片20240616172318
+![](Figure/lesson_3/QQ图片20240616172318.png)
+
 ## 茴香豆完整工作流
-图片QQ图片20240616172310
+![](Figure/lesson_3/QQ图片20240616172310.png)
 
 # 实战
 ## 基础作业 在 InternLM Studio 上部署茴香豆技术助手
@@ -88,7 +98,8 @@ git checkout b9bc427 # 将仓库的HEAD指针移动到指定的提交
   `sed -i '29s#.*#local_llm_path = "/root/models/internlm2-chat-7b"#' /root/huixiangdou/config.ini`
 
   修改好的配置文件如下：
-  图片QQ图片20240616172243
+ ![](Figure/lesson_3/QQ图片20240616172243.png)
+
  #### 3.2、创建知识库
  使用 InternLM 的 Huixiangdou 文档作为新增知识数据检索来源，在不重新训练的情况下，打造一个 Huixiangdou 技术问答助手。
  - 下载 Huixiangdou 语料：
@@ -204,4 +215,4 @@ python3 -m huixiangdou.main --standalone
 ```
 
 结果：
-图片QQ图片20240616172227
+![](Figure/lesson_3/QQ图片20240616172227.png)
